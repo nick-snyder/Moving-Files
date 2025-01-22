@@ -1,0 +1,14 @@
+********** PROGRAM OUTPUT ********
+
++++++++word check 0++++++++
+./wordcheck < w_input0
+
+Please input a 4 letter word:aine bine cine dine eine fine gine hine kine line mine nine pine rine sine tine vine wane wene wice wide wife wile wime wina wind wing wini wink winn wino wins wint winy wipe wire wise wite wive wone wyne
+Total: 41 words.
+Please input a 4 letter word:boot coot foot hoot loot moot poot riot roit rood roof rook rool room roon roop roos rort rost rout rowt royt ryot soot toot
+Total: 25 words.
+Please input a 4 letter word:bice dice fice lice mice nace nica nich nick nico nide nife nike nile nine niue nixe pice rice sice tice vice wice
+Total: 23 words.
+Please input a 4 letter word:bose cose dose fose hose jose lose mose nose oose pose rase rese rise robe rode roee roke role rome rone rope rosa ross rost rosy rote roue rove rowe roye roze rtse ruse
+Total: 34 words.
+Please input a 4 letter word:

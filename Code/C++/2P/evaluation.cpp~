@@ -1,0 +1,146 @@
+/**
+ * CS515 Assignment 2
+ * File: evaluation.cpp
+ * Name: Nick Snyder
+ * Section: 2
+ * Date: 18 February 2022
+ * Collaboration Declaration: online resources
+ */
+
+// infix expression evaluation
+// implemented with STL vector
+// evalues expression with multiple digit numbers, * / + - and {} [] () paratheis
+// assume the expression is well formatted with balanced braces.
+
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+//----------------------------------------------------------------
+// Generates a stack of string tokens representing postfix
+// notation for the input line
+void generateRPN(string line, stack<string> &postfix);
+
+int execute(stack<int> s, char oper) {
+	int answer = 0;
+	int rightOperand = s.top();
+	s.pop();
+	int leftOperand = s.top();
+	s.pop();
+
+	switch (oper) {
+		case '+':
+			answer = leftOperand + rightOperand;
+			break;
+		case '-':
+			answer = leftOperand - rightOperand;
+			break;
+		case '*':
+			answer = leftOperand * rightOperand;
+			break;
+		case '/':
+			answer = leftOperand / rightOperand;
+			break;
+	}
+	s.push(answer);
+	return answer;
+}
+
+int evaluateExpression(string expression) {
+	// basically evaluateRPN()
+}
+
+string evaluateRPN(stack<string> &postfix) {
+	stack<int> copystack;
+	string next;
+	while (&postfix.size() > 0) {
+		next += &postfix.top() + " ";
+		&postfix.pop;
+	}
+	int numoperands = 0;
+	while (next.length() > 0) {
+		int i = 0;
+	      	if (isdigit(next[0])) {
+			copystack.push(stoi(next[0]));
+			numoperands++;
+			next = next.substr(1, next.size() - 1);
+		} else if (next[i] == " ") {
+			next = next.substr(1, next.size() - 1);
+		} else {
+			if (numoperands >= 2) {
+				execute(copystack, next[0]);
+				numoperands--;
+			}
+			next = next.substr(1, next.size() - 1);
+		}
+	}
+	return stoi(copystack.top());
+}
+//----------------------------------------------------------------
+// Returns a the result of evaluating the passed postfix token
+// stack as a decimal string
+
+// Java code
+/*
+    public static Number evaluateExpression(String expr) {
+
+        // (2)
+        Stack<Integer> stack = new Stack<>();
+        Scanner scanner = new Scanner(expr);
+        int numOperands = 0;    //?
+
+        // (3)
+        while (scanner.hasNext()) {
+
+            // (a)
+            //If the scanner contains an integer next (hasNextInt)
+            if (scanner.hasNextInt()) {
+
+                //read the integer from the scanner into a variable
+                int i = scanner.nextInt();
+
+                //Print output to indicate that an operand was read
+                System.out.println("Operand read: " + i);
+
+                //Then push that integer value onto the stack
+                stack.push(i);
+
+                numOperands++;  //?
+
+            // (b)
+            //If the scanner does not contain an integer next
+            } else if (!scanner.hasNextInt()) {
+
+                //call execute(stack, operator)
+                execute(stack, checkValidOperator(str));
+
+                numOperands--;   //?
+            }
+        }
+    }
+*/
+
+//----------------------------------------------------------------
+int main(int argc, char ** argv)
+{
+    string line;
+    cout << "Expression: ";
+    while (getline(cin, line))
+    {
+        // skip empty line
+        if (line.length() == 0)
+            continue;
+
+        stack<string> postfix;
+        if (line == "exit")
+            break;
+
+        generateRPN(line, postfix);
+
+        cout << "Answer: " << evaluateRPN(postfix) << endl;
+        line.clear();
+        cout << "Expression: ";
+    }
+    return 0;
+}

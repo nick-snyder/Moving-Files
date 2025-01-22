@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Feb 28 14:23:16 2023
+# Process ID: 22900
+# Current directory: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.runs/synth_1
+# Command line: vivado.exe -log AlwaysBlock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AlwaysBlock.tcl
+# Log file: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.runs/synth_1/AlwaysBlock.vds
+# Journal file: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.runs/synth_1\vivado.jou
+# Running On: LAPTOP-KCVDV3HC, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 21319 MB
+#-----------------------------------------------------------
+source AlwaysBlock.tcl -notrace
+Command: synth_design -top AlwaysBlock -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24464
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+ERROR: [Synth 8-2716] syntax error near 'and' [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:25]
+ERROR: [Synth 8-10307] Verilog 2000 keyword 'and' used in incorrect context [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:25]
+WARNING: [Synth 8-9400] empty statement in always construct [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:25]
+ERROR: [Synth 8-2716] syntax error near 'xor' [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:27]
+ERROR: [Synth 8-10307] Verilog 2000 keyword 'xor' used in incorrect context [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:27]
+WARNING: [Synth 8-9400] empty statement in always construct [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:27]
+ERROR: [Synth 8-2716] syntax error near 'end' [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:30]
+ERROR: [Synth 8-10307] Verilog 2000 keyword 'end' used in incorrect context [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:30]
+WARNING: [Synth 8-9400] empty statement in always construct [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:30]
+WARNING: [Synth 8-9926] potential always loop found [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:25]
+WARNING: [Synth 8-9926] potential always loop found [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:27]
+WARNING: [Synth 8-9926] potential always loop found [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:30]
+INFO: [Synth 8-10285] module 'AlwaysBlock' is ignored due to previous errors [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v:33]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v' ignored due to errors
+Failed to read verilog 'C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/class/class.srcs/sources_1/new/AlwaysBlock.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+8 Infos, 6 Warnings, 0 Critical Warnings and 7 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 28 14:23:27 2023...

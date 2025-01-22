@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Mar 27 23:32:58 2023
+# Process ID: 19200
+# Current directory: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.runs/impl_1
+# Command line: vivado.exe -log main_tb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main_tb.tcl -notrace
+# Log file: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.runs/impl_1/main_tb.vdi
+# Journal file: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.runs/impl_1\vivado.jou
+# Running On: LAPTOP-KCVDV3HC, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 21319 MB
+#-----------------------------------------------------------
+source main_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 394.234 ; gain = 67.988
+Command: link_design -top main_tb -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.145 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'switches[15]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[14]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[13]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[12]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[11]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[10]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[9]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[8]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[7]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[6]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[5]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[4]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[3]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[2]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[1]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[0]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[0]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[1]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[2]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[3]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[4]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[5]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[6]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[0]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[1]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[2]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[3]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[3]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[2]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[1]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode[0]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[6]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[5]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[4]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[3]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[2]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[1]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[0]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[15]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[14]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[13]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[12]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[11]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[10]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[9]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[8]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[7]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[6]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[5]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[4]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[3]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[2]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[1]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[0]'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.srcs/constrs_1/new/lab3_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 921.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 56 Warnings, 56 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 921.266 ; gain = 522.227
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.997 . Memory (MB): peak = 926.320 ; gain = 5.055
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1399.402 ; gain = 473.082
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1731.988 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1731.988 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1731.988 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1731.988 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1731.988 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 5d9f724f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1731.988 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 56 Warnings, 56 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1731.988 ; gain = 810.723
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.runs/impl_1/main_tb_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file main_tb_drc_opted.rpt -pb main_tb_drc_opted.pb -rpx main_tb_drc_opted.rpx
+Command: report_drc -file main_tb_drc_opted.rpt -pb main_tb_drc_opted.pb -rpx main_tb_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab3/lab3.runs/impl_1/main_tb_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1738.145 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1738.145 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1738.145 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1738.145 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 56 Warnings, 56 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 23:33:42 2023...

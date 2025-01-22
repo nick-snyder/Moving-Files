@@ -1,0 +1,40 @@
+﻿Comment,Designator,Footprint,LCSC
+2u2,"C1, C2",Capacitor_SMD:C_0603_1608Metric,C23630
+4u7,C3,Capacitor_SMD:C_0603_1608Metric,C19666
+100n,"C4-C8, C13, C15, C20",Capacitor_SMD:C_0402_1005Metric,C307331
+1u,C9,Capacitor_SMD:C_0402_1005Metric,C52923
+10n,C10,Capacitor_SMD:C_0402_1005Metric,C15195
+10p,"C11, C12",Capacitor_SMD:C_0402_1005Metric,C32949
+10u,"C14, C16, C17",Capacitor_SMD:C_1206_3216Metric,C13585
+22u,"C18, C21, C22",Capacitor_SMD:C_1206_3216Metric,C12891
+22n,C19,Capacitor_SMD:C_0402_1005Metric,C1532
+BLUE,D1,LED_SMD:LED_0603_1608Metric,C2286
+1N4148,D2,Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal,C81598
+B140-E3,D4,Diode_SMD:D_SMA,C142601
+MountingHole_Pad,H1-H4,MountingHole:MountingHole_4.3mm_M4_Pad_Via,
+5v Out,J1,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,
+Conn_01x04_Socket,"J2, J4",Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+Conn_01x02_Socket,"J5, J6",Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,
+SWD,J7,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,
+XT60 IN,J8,Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical,
+Conn_01x05_Pin,J9,Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,
+XT60 OUT,"J10, J11, J13, J14",Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical,
+39n,L1,Inductor_SMD:L_0402_1005Metric,C275324
+15u,L2,Inductor_SMD:L_Sunlord_MWSA0518S,C340242
+6u8,L3,Inductor_SMD:L_Sunlord_MWSA0518S,C334250
+10k,"R1, R9, R10, R12, R16-R18, R22",Resistor_SMD:R_0603_1608Metric,C25804
+47,R2,Resistor_SMD:R_0402_1005Metric,C25792
+1k5,"R3-R6, R13, R14",Resistor_SMD:R_0603_1608Metric,C22843
+1k,"R7, R15, R23",Resistor_SMD:R_0603_1608Metric,C21190
+31k6,R8,Resistor_SMD:R_0603_1608Metric,C3016363
+90k9,R11,Resistor_SMD:R_0603_1608Metric,C728600
+11k,R19,Resistor_SMD:R_0603_1608Metric,C100720
+21k5,R20,Resistor_SMD:R_0603_1608Metric,C303835
+32k,R21,Resistor_SMD:R_0603_1608Metric,C1613
+SW_SPDT,SW1,Button_Switch_SMD:SW_SPDT_PCM12,
+STM32F405RGTx,U1,Package_QFP:LQFP-64_10x10mm_P0.5mm,C15742
+MP2303ADN,U2,Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.62x3.51mm,C18876
+ADS1115IDGS,U3,Package_SO:TSSOP-10_3x3mm_P0.5mm,C37593
+MCP16301,U4,Package_TO_SOT_SMD:SOT-23-6,C511272
+MAX22205ATU+,"U5, U6",footprints:21-0172_T3857-1C_MXM,C3681230
+16MHz,Y1,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,C13738

@@ -1,0 +1,51 @@
+CS515 Lab 8
+
+
+Name: Nick Snyder
+uid: nrs1053
+Section: 2
+
+
+mysterySort1 is bubble
+Your evidence:
+The values were checked against the next 
+value and if it was larger, it was switched 
+and the loop would continue.
+
+
+mysterySort2 is heap
+Your evidence:
+The larger numbers move toward the front 
+and then the largest is moved to the back
+
+
+mysterySort3 is insertion
+Your evidence:
+The front gets sorted first and moves to the 
+right. Range of size 2 get sorted then 1 more
+value is added and sorted again
+
+
+mysterySort4 is quick
+Your evidence:
+Values gets split into smaller and larger 
+parts that get sorted induvidually 
+
+
+mysterySort5 is selection
+Your evidence:
+The algorithm finds the smallest unsorted 
+value and sends it to the front. The next 
+smallest value is next.
+
+
+——————————————————
+How many hours did you take to complete this assignment?
+
+Task 1: 1 hour
+Task 2: 
+
+How difficult did you find this assignment from a scale of 0-10 where 10 represents the hardest?
+
+
+What challenges did you encounter? And how did you address them?

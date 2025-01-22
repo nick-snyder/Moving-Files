@@ -1,0 +1,33 @@
+0000000a	10 	2	insymbol		header
+00000000	0	0	outsymbol		
+00000007	7		length	
+
+00003178	x1					insymbols
+00000000				
+00000000				
+00000000				
+00000000	0			
+00003179	y1		
+00000000				
+00000000				
+00000000				
+00000001	1			
+
+00000000	x1:	word 0		0	program
+00000000	y1:	word 0		1
+ffffd101		load r1, x1	2
+00032203		ldimm r2, 50	3
+0000120b		addi r2, r1	4
+ffffb202		store r2, y1	5 
+00000000		halt			6
+
+
+export x1
+export y1
+x1: word 0		1
+y1: word 0		2
+  load r1, x1		3
+  ldimm r2, 50		4
+  addi r2, r1		5
+  store r2, y1		6
+  halt			7

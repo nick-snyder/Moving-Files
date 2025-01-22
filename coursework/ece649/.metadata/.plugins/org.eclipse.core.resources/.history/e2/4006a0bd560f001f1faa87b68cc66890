@@ -1,0 +1,163 @@
+#include <msp430.h> 
+#include "driverlib.h"
+#include "myGpioLab3.h"
+#include "myClocks.h"
+#include "myLcdLab3.h"
+
+#define HALLA BIT2
+#define HALLB BIT3
+#define redLED BIT0
+#define greenLED BIT7
+
+#define POLES 6
+#define CIRCUMFERENCE 314
+
+char direction;
+char newHall;
+char oldHall;
+int phase;
+int speed;
+
+void update_LCD(void);
+
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+    PM5CTL0 &= ~LOCKLPM5; // Enable the GPIO pins
+
+    initClocks();   // Required for the LCD
+    myLCD_init();   // Required for the LCD
+	
+	// HALL. P4.2
+    P4DIR &= ~BIT2; // Input
+    P4REN |= BIT2;  // Resistors enabled
+    P4OUT &= ~BIT2; // Pull-up enabled
+    P4SEL1 &= ~BIT2; // Primary selected
+    P4SEL0 |= BIT2; // Primary selected
+    P4IES &= ~BIT2; // Low-to-high transition
+    P4IE |= BIT2;   // Port interrupt enabled
+    P4IFG &= ~BIT2; // Clear interrupt
+
+    // HALL. P4.3
+    P4DIR &= ~BIT3; // Input
+    P4REN |= BIT3;  // Resistors enabled
+    P4OUT &= ~BIT3; // Pull-up enabled
+    P4SEL1 &= ~BIT3; // Primary selected
+    P4SEL0 |= BIT3; // Primary selected
+    P4IES &= ~BIT3; // Low-to-high transition
+    P4IE |= BIT3;   // Port interrupt enabled
+    P4IFG &= ~BIT3; // Clear interrupt
+
+    // RED LED. P1.0
+    P1DIR |= BIT1;  // Output
+    P1REN &= ~BIT1; // Resistors disabled
+    P1OUT &= ~BIT1; // Start low
+
+    // GREEN LED. P9.7
+    P9DIR |= BIT7;  // Output
+    P9REN &= ~BIT7; // Resistors disabled
+    P9OUT &= ~BIT7; // Start low
+
+    // Timer_A: ACLK, divide by 1, continuous mode, clear TAR (leaves TAIE=0)
+    TA1CTL = TASSEL_1 | ID_0 | MC_1 | TACLR;
+
+    /**
+     * define number of poles
+     * define circumference
+     *
+     * wait for first port interrupt
+     * start timer
+     * wait for second port interrupt
+     * calculate time between interrupts
+     *
+     * show speed based on time
+     * show direction based on order of interrupts
+     */
+
+    _enable_interrupts();
+
+	return 0;
+}
+
+#pragma vector = PORT4_VECTOR
+__interrupt void PORT4_ISR(void)
+{
+    oldHall = newHall;
+
+    // if Hall A is sensed
+    if (P4IN == HALLA)
+    {
+        P4IFG &= ~HALLA; // Clear interrupt
+        newHall = 'A';
+
+        // flip green
+        P9OUT ^= GREEN_ON;
+    }
+
+    // if Hall B is sensed
+    else
+    {
+        P4IFG &= ~HALLB; // Clear interrupt
+        newHall = 'B';
+
+        // flip red
+        P1OUT ^= RED_ON;
+    }
+
+    if (newHall != oldHall)
+    {
+        speed = 99;
+    }
+    else
+    {
+        speed = 0;
+    }
+
+    // reset timer
+    TA1CTL |= TACLR;
+    update_LCD();
+}
+
+// if timer reaches the interrupt, speed too low
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void T0A0_ISR()
+{
+    // clears the flag (CCIFG in TA0CCTL0)
+    TA1CCTL0 &= ~CCIFG;
+
+    speed = 0;
+    update_LCD();
+}
+
+void update_LCD(void)
+{
+    char speed_c;
+    direction = newHall;
+
+    if (direction == 'A')
+    {
+        myLCD_showChar('A', 1);
+    }
+    else
+    {
+        myLCD_showChar('B', 1);
+    }
+
+    // 1 2 m / s
+    if (speed >= 10)
+    {
+        int speed_temp = speed - 10;    // fix
+        speed_char = speed_temp - '0';
+        myLCD_showChar(speed_c, 2);
+    }
+    else
+    {
+        myLCD_showChar(' ', 2);
+    }
+    speed_char = speed - '0';
+    myLCD_showChar(speed_c, 3);
+
+    myLCD_showChar('m', 4);
+    myLCD_showChar('/', 5);
+    myLCD_showChar('s', 6);
+}

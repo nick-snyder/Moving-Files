@@ -1,0 +1,18 @@
+Time resolution is 1 ps
+out =     x
+out =     0
+out =     1
+out =     0
+out =     1
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+out = 65535
+$finish called at time : 160 ns : File "C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/parallel_load_register_16b_tb.v" Line 46

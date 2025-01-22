@@ -1,0 +1,90 @@
+#include <msp430.h> 
+#define BUTTON11 BIT1
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5; // Enable the GPIO pins
+	
+	// Direct pin as output
+    P1DIR = redLED;
+
+    // Turn LED Off
+    P1OUT &= ~redLED;
+
+	TA0CCR0 = 0xffff;
+    // Configure Channel 0 for up mode with interrupt
+    // Enable Channel 0 CCIE bit
+    TA0CCTL0 |= CCIE;
+
+    // Clear Channel 0 CCIFG bit
+    TA0CCTL0 &= ~CCIFG;
+
+    // Timer_A: ACLK, divide by 16, up mode, clear TAR (leaves TAIE=0)
+    TA0CTL = TASSEL_1 | ID_0 | MC_1 | TACLR;
+
+    // Enable the global interrupt bit (call an intrinsic function)
+    _BIS_SR(GIE);
+
+	while (1)
+	{
+        while (~(~P1IN & 0x02))
+        {
+            // welcome message
+            // scroll text in 1/4 second intervals
+            myLCD_showChar('N', 1);
+            myLCD_showChar('I', 2);
+            myLCD_showChar('C', 3);
+            myLCD_showChar('K', 4);
+        }
+
+        // count down
+        // flash count down in two 1/2 second intervals
+        // toggle LED at every count
+        P1OUT ^= redLED;
+        myLCD_showChar('3', 1);
+        myLCD_showChar('2', 1);
+        myLCD_showChar('1', 1);
+
+        // music plays
+        // musical note is a PWM signal at 50% duty and at some period
+
+        /**
+         * half     2       16384
+         *
+         * quarter  4       8192
+         *
+         * a        440     74
+         * b flat   466     70
+         * b        494     66
+         * c        523     63
+         * c sharp  554     59
+         * d        587     56
+         * e flat   622     53
+         * e        659     50
+         * f        698     47
+         * f sharp  740     44
+         * g        784     42
+         * a flat   831     39
+         * a        880     37
+         */
+
+	}
+
+	return 0;
+}
+
+
+//*******************************
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void T0A0_ISR()
+{
+    // clears the flag (CCIFG in TA0CCTL0)
+    TA0CCTL0 &= ~CCIFG;
+
+    // Code for changing LED toggling frequency
+    TA0CCR0 -= 0x2000;
+}

@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/comparator_tb.v,1676430296,verilog,,,,comparator_tb,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/comparator_u1b_dataflow.v,1675736567,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/comparator_tb.v,,comparator_u1b_dataflow,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/mux_2c_16b.v,1675805493,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/mux_2c_1b_dataflow.v,,mux_2c_16b,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/mux_2c_1b_dataflow.v,1675734234,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/mux_tb.v,,mux_2c_1b_dataflow,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/Lab1/Lab1.srcs/sources_1/new/mux_tb.v,1676429734,verilog,,,,mux_tb,,,,,,,,

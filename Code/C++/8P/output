@@ -1,0 +1,135 @@
+
+----------output1----------
+
++++++++Huffman Code Test 1++++++++
+000
+10
+011
+11
+010
+001
+
+----------output2----------
+
++++++++Huffman Code Test 2++++++++
+1110
+1111110
+10
+0
+111110
+110
+11110
+1111111
+
+----------output3----------
+
++++++++Huffman Code Test 3++++++++
+110101
+1110
+110100
+11000
+1111
+110111
+11001
+100
+0
+101
+110110
+
+----------output4----------
+
++++++++Huffman Code Test 4++++++++
+00
+111110
+11100
+11000
+111111
+01
+11010
+11011
+111101
+10
+11101
+11001
+111100
+
+----------output5----------
+
++++++++Valgrind Huffman Code Test 4++++++++
+==604== Memcheck, a memory error detector
+==604== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==604== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==604== Command: ./testHuff4
+==604== 
+00
+111110
+11100
+11000
+111111
+01
+11010
+11011
+111101
+10
+11101
+11001
+111100
+==604== 
+==604== HEAP SUMMARY:
+==604==     in use at exit: 0 bytes in 0 blocks
+==604==   total heap usage: 27 allocs, 27 frees, 78,200 bytes allocated
+==604== 
+==604== All heap blocks were freed -- no leaks are possible
+==604== 
+==604== For counts of detected and suppressed errors, rerun with: -v
+==604== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+
+
+----------output6----------
+
++++++++Huffman Code Compression Rate Test 1 ++++++++
+original bits: 6400
+bits after compression: 3991
+compression rate: 37.64%
+
+----------output7----------
+
++++++++Huffman Code Compression Rate Test 2 ++++++++
+original bits: 8208
+bits after compression: 5401
+compression rate: 34.2%
+
+----------output8----------
+
++++++++Huffman Code Compression Rate Test 3 ++++++++
+original bits: 1018416
+bits after compression: 534847
+compression rate: 47.48%
+
+----------output9----------
+
++++++++Valgrind Huffman Code Compression Rate Test 3++++++++
+==754== Memcheck, a memory error detector
+==754== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==754== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==754== Command: ./HuffmanCoder input3
+==754== 
+original bits: 1018416
+bits after compression: 534847
+compression rate: 47.48%
+==754== 
+==754== HEAP SUMMARY:
+==754==     in use at exit: 0 bytes in 0 blocks
+==754==   total heap usage: 55 allocs, 55 frees, 88,400 bytes allocated
+==754== 
+==754== All heap blocks were freed -- no leaks are possible
+==754== 
+==754== For counts of detected and suppressed errors, rerun with: -v
+==754== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+----------Done----------
+
+chgrp: cannot access 'output': No such file or directory
+chmod: cannot access 'output': No such file or directory

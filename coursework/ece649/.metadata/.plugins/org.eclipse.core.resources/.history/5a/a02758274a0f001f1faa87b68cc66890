@@ -1,0 +1,15 @@
+#include <msp430.h> 
+#include "driverlib.h"
+#include "myGpioLab3.h"
+#include "myClocks.h"
+#include "myLcdLab3.h"
+
+#define HALLA BIT2
+#define HALLB BIT3
+
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	
+	return 0;
+}

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Mar  9 14:20:34 2023
+# Process ID: 10784
+# Current directory: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab2/lab2.runs/synth_1
+# Command line: vivado.exe -log ArithmaticLogicUnit_32b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ArithmaticLogicUnit_32b.tcl
+# Log file: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab2/lab2.runs/synth_1/ArithmaticLogicUnit_32b.vds
+# Journal file: C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab2/lab2.runs/synth_1\vivado.jou
+# Running On: LAPTOP-KCVDV3HC, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 21319 MB
+#-----------------------------------------------------------
+source ArithmaticLogicUnit_32b.tcl -notrace

@@ -1,0 +1,62 @@
+#include <msp430.h> 
+#define BUTTON11 BIT1
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5; // Enable the GPIO pins
+	
+	TA0CCR0 = 0xffff;
+    // Configure Channel 0 for up mode with interrupt
+    // Enable Channel 0 CCIE bit
+    TA0CCTL0 |= CCIE;
+
+    // Clear Channel 0 CCIFG bit
+    TA0CCTL0 &= ~CCIFG;
+
+    // Timer_A: ACLK, divide by 2, up mode, clear TAR (leaves TAIE=0)
+    TA0CTL = TASSEL_1 | ID_1 | MC_1 | TACLR;
+
+    // Enable the global interrupt bit (call an intrinsic function)
+    _BIS_SR(GIE);
+
+	while (1)
+	{
+        while (~(~P1IN & 0x02))
+        {
+            // welcome message
+            myLCD_showChar('N', 1);
+            myLCD_showChar('I', 2);
+            myLCD_showChar('C', 3);
+            myLCD_showChar('K', 4);
+        }
+
+        // count down
+        myLCD_showChar('N', 1);
+        myLCD_showChar('I', 2);
+        myLCD_showChar('C', 3);
+        myLCD_showChar('K', 4);
+
+        // music plays
+	}
+
+	return 0;
+}
+
+
+//*******************************
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void T0A0_ISR()
+{
+    // Toggle the red LED
+    P1OUT ^= redLED;
+
+    // clears the flag (CCIFG in TA0CCTL0)
+    TA0CCTL0 &= ~CCIFG;
+
+    // Code for changing LED toggling frequency
+    TA0CCR0 -= 0x2000;
+}

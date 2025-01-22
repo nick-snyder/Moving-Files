@@ -1,0 +1,44 @@
+#include <msp430.h> 
+#define BUTTON11 BIT1
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	
+
+	while (1)
+	{
+        while (~()~P1IN & 0x02))
+        {
+            myLCD_showChar('N', 1);
+            myLCD_showChar('I', 2);
+            myLCD_showChar('C', 3);
+            myLCD_showChar('K', 4);
+        }
+
+        myLCD_showChar('N', 1);
+        myLCD_showChar('I', 2);
+        myLCD_showChar('C', 3);
+        myLCD_showChar('K', 4);
+	}
+
+	return 0;
+}
+
+
+//*******************************
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void T0A0_ISR()
+{
+    // Toggle the red LED
+    P1OUT ^= redLED;
+
+    // clears the flag (CCIFG in TA0CCTL0)
+    TA0CCTL0 &= ~CCIFG;
+
+    // Code for changing LED toggling frequency
+    TA0CCR0 -= 0x2000;
+}

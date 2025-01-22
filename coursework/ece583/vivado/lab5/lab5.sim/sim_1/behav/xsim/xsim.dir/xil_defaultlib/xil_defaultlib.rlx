@@ -1,0 +1,21 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/BCD_counter_4b.v,1683068862,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/BCD_counter_4d.v,,BCD_counter_4b,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/BCD_counter_4b_tb.v,1681173807,verilog,,,,BCD_counter_4b_tb,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/BCD_counter_4d.v,1683068653,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/test_BCD_counter_4d.v,,BCD_counter_4d,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab4/lab4.srcs/sources_1/new/test_BCD_counter_4d.v,1681173970,verilog,,,,test_BCD_counter_4d,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sim_1/new/testbench_display_control.v,1683174405,verilog,,,,testbench_display_control,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sim_1/new/testbench_stopwatch.v,1683227052,verilog,,,,testbench_stopwatch,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sim_1/new/testbench_stopwatch_control_unit.v,1683603847,verilog,,,,testbench_stopwatch_control_unit,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/display_control.v,1683226494,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/four_bit_binary_coded_decimal_counter.v,,display_control,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/four_bit_binary_coded_decimal_counter.v,1683172513,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/four_digit_binary_coded_decimal_counter.v,,four_bit_binary_coded_decimal_counter,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/four_digit_binary_coded_decimal_counter.v,1683173794,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/get_segment_value.v,,four_digit_binary_coded_decimal_counter,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/get_segment_value.v,1683070699,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/sixteen_bit_parallel_load_register.v,,get_segment_value,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/sixteen_bit_parallel_load_register.v,1683173101,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch.v,,sixteen_bit_parallel_load_register,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch.v,1683226599,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch_control_unit.v,,stopwatch,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch_control_unit.v,1683069247,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch_output_control.v,,stopwatch_control_unit,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch_output_control.v,1683068082,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch_state_transition_control.v,,stopwatch_output_control,,,,,,,,
+C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sources_1/new/stopwatch_state_transition_control.v,1683254330,verilog,,C:/Users/no_kn/Documents/unh/coursework/ece583/vivado/lab5/lab5.srcs/sim_1/new/testbench_stopwatch_control_unit.v,,stopwatch_state_transition_control,,,,,,,,

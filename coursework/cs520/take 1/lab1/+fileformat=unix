@@ -1,0 +1,17 @@
+#!/bin/bash
+# testing lab 1
+
+# executes program
+echo "executing a.out..."
+./a.out t1-utf8-letter-x OUTPUT_UTF8_LETTER_X
+echo "program complete."
+
+# displays expected output
+echo "expected output:"
+od -tx4 OUTPUT_UTF_LETTER_X_TEST
+
+# displays program output
+echo "program output:"
+od -tx4 OUTPUT_UTF_LETTER_X
+
+

@@ -1,0 +1,32 @@
+#!/bin/tcsh -f
+
+echo "+++++++Huffman Code Test 1++++++++" 
+./testHuff1
+
+echo "+++++++Huffman Code Test 2++++++++" 
+./testHuff2
+
+echo "+++++++Huffman Code Test 3++++++++" 
+./testHuff3
+
+echo "+++++++Huffman Code Test 4++++++++" 
+./testHuff4
+
+echo "+++++++Valgrind Huffman Code Test 4++++++++"
+valgrind ./testHuff4
+
+echo
+echo
+echo 
+
+echo "+++++++Huffman Code Compression Rate Test 1 ++++++++" 
+./HuffmanCoder input1
+
+echo "+++++++Huffman Code Compression Rate Test 2 ++++++++" 
+./HuffmanCoder input2
+
+echo "+++++++Huffman Code Compression Rate Test 3 ++++++++" 
+./HuffmanCoder input3
+
+echo "+++++++Valgrind Huffman Code Compression Rate Test 3++++++++"
+valgrind ./HuffmanCoder input3

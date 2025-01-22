@@ -1,0 +1,27 @@
+#include <msp430.h> 
+
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	
+	return 0;
+}
+
+
+//*******************************
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void T0A0_ISR()
+{
+    // Toggle the red LED
+    P1OUT ^= redLED;
+
+    // clears the flag (CCIFG in TA0CCTL0)
+    TA0CCTL0 &= ~CCIFG;
+
+    // Code for changing LED toggling frequency
+    TA0CCR0 -= 0x2000;
+}
