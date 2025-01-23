@@ -1,8 +1,0 @@
-utf8-2-byte --> OUTPUT_UTF8TO16-2-BYTE
-utf8-val-a999 --> OUTPUT_UTF8TO16-VAL-A999
-utf8-val-b789 --> OUTPUT_UTF8TO16-VAL-B789
-
-utf16-1-be --> UTF32-1
-utf16-2-le --> UTF32-2
-utf16-3-be --> UTF32-3
-utf16-val-a999-le --> UTF32-VAL-A999
